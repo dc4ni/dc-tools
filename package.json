@@ -1,0 +1,24 @@
+{
+  "name": "DirectConverter",
+  "version": "1.0.0",
+  "description": "A powerful web-based image converter tool",
+  "main": "backend/app/main.py",
+  "scripts": {
+    "setup": "bash setup.sh",
+    "backend": "cd backend && source venv/bin/activate && python -m app.main",
+    "frontend": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "dev": "concurrently 'npm run backend' 'npm run frontend'"
+  },
+  "keywords": [
+    "image",
+    "converter",
+    "format",
+    "transformation",
+    "png",
+    "jpg",
+    "webp"
+  ],
+  "author": "DirectConverter Team",
+  "license": "MIT"
+}

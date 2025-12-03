@@ -1,0 +1,341 @@
+.sidemenu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 90;
+  display: none;
+}
+
+.sidemenu {
+  width: var(--sidemenu-width);
+  background: white;
+  border-right: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - var(--header-height));
+  position: fixed;
+  left: 0;
+  top: var(--header-height);
+  overflow-y: auto;
+  transition: all 0.3s ease;
+  z-index: 95;
+  box-shadow: 1px 0 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+html.dark-mode .sidemenu {
+  background: #1f2937;
+  border-right-color: #374151;
+}
+
+.sidemenu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+html.dark-mode .sidemenu-header {
+  border-bottom-color: #374151;
+}
+
+.sidemenu-header h2 {
+  margin: 0;
+  font-size: 1.2em;
+  color: var(--text-primary);
+}
+
+.sidemenu-close {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: var(--text-secondary);
+  transition: color 0.3s ease;
+}
+
+.sidemenu-close:hover {
+  color: var(--text-primary);
+}
+
+.sidemenu-nav {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.sidemenu-search {
+  padding: 10px 10px 15px 10px;
+  position: sticky;
+  top: 0;
+  background: inherit;
+  z-index: 1;
+}
+
+.sidemenu-search input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.9em;
+  background: #f9fafb;
+  transition: all 0.2s ease;
+}
+
+html.dark-mode .sidemenu-search input {
+  background: #374151;
+  color: #e8e8e8;
+  border-color: #4b5563;
+}
+
+.sidemenu-search input:focus {
+  outline: none;
+  border-color: #1C64F2;
+  box-shadow: 0 0 0 3px rgba(28, 100, 242, 0.1);
+}
+
+.sidemenu-empty {
+  padding: 12px;
+  color: var(--text-secondary);
+  text-align: center;
+  font-size: 0.9em;
+}
+
+/* Category Styling */
+.sidemenu-category {
+  margin-bottom: 10px;
+}
+
+.sidemenu-category-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 15px;
+  margin-bottom: 5px;
+  background: var(--bg-secondary);
+  border: 2px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  width: 100%;
+  font-size: 0.9em;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.sidemenu-category-header:hover {
+  background-color: #f0f3ff;
+  border-color: #667eea;
+}
+
+html.dark-mode .sidemenu-category-header:hover {
+  background-color: #3d4a5e;
+  border-color: #667eea;
+}
+
+.category-icon {
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  flex-shrink: 0;
+}
+
+.category-name {
+  flex: 1;
+}
+
+.category-toggle {
+  font-size: 0.8em;
+  color: var(--text-secondary);
+  transition: transform 0.3s ease;
+}
+
+.sidemenu-category-header.expanded .category-toggle {
+  transform: rotate(0deg);
+}
+
+.sidemenu-category-items {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-left: 10px;
+  padding-bottom: 5px;
+  border-left: 2px solid var(--border-color);
+  padding-left: 10px;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Item Styling */
+.sidemenu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 15px;
+  margin-bottom: 0;
+  background: var(--bg-secondary);
+  border: 2px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  width: 100%;
+  font-size: 0.85em;
+  color: var(--text-primary);
+}
+
+.sidemenu-item:hover:not(.disabled) {
+  background-color: #e7f3ff;
+  border-color: #667eea;
+  transform: translateX(3px);
+}
+
+html.dark-mode .sidemenu-item:hover:not(.disabled) {
+  background-color: #3d4a5e;
+  border-color: #667eea;
+}
+
+.sidemenu-item.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-color: #667eea;
+}
+
+.sidemenu-item.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.sidemenu-text {
+  flex: 1;
+}
+
+.sidemenu-name {
+  font-weight: 600;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+}
+
+.sidemenu-item.active .sidemenu-name {
+  color: white;
+}
+
+.sidemenu-status {
+  font-size: 0.75em;
+  color: var(--text-secondary);
+  margin-top: 3px;
+  transition: color 0.3s ease;
+}
+
+.sidemenu-footer {
+  padding: 20px;
+  border-top: 2px solid var(--border-color);
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.75em;
+  background-color: var(--bg-secondary);
+  transition: all 0.3s ease;
+}
+
+.sidemenu-footer p {
+  margin: 5px 0;
+  line-height: 1.6;
+}
+
+.sidemenu-footer .version-info {
+  font-weight: 600;
+  color: var(--accent-color);
+  font-size: 0.95em;
+  margin-bottom: 8px;
+}
+
+.sidemenu-footer .copyright {
+  font-size: 0.85em;
+  opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sidemenu {
+    width: 100%;
+    height: calc(100vh - var(--header-height));
+    transform: translateX(-100%);
+  }
+
+  .sidemenu.open {
+    transform: translateX(0);
+  }
+
+  .sidemenu-overlay {
+    display: block;
+  }
+
+  .sidemenu-close {
+    display: block;
+  }
+
+  .sidemenu-category-header {
+    padding: 10px 12px;
+    gap: 10px;
+    font-size: 0.85em;
+  }
+
+  .sidemenu-item {
+    padding: 10px 12px;
+    gap: 10px;
+    font-size: 0.8em;
+  }
+
+  .category-icon {
+    width: 24px;
+    font-size: 1em;
+  }
+
+  .sidemenu-name {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidemenu-header h2 {
+    font-size: 1em;
+  }
+
+  .sidemenu-category-header {
+    padding: 8px 10px;
+    font-size: 0.8em;
+  }
+
+  .sidemenu-item {
+    padding: 8px 10px;
+    font-size: 0.75em;
+  }
+
+  .sidemenu-name {
+    font-size: 0.85em;
+  }
+
+  .sidemenu-footer {
+    padding: 15px;
+    font-size: 0.7em;
+  }
+}

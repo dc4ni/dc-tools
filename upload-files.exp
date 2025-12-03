@@ -1,0 +1,45 @@
+#!/usr/bin/expect -f
+
+set timeout 300
+set server_ip "172.238.14.142"
+set password "@Joendle396"
+
+puts "\n========================================="
+puts "上傳所有修改的檔案到伺服器"
+puts "=========================================\n"
+
+# 定義所有需要上傳的檔案
+set files {
+    "frontend/index.html"
+    "frontend/src/components/ImageConverterTool.jsx"
+    "frontend/src/components/ImageResizeCropTool.jsx"
+    "frontend/src/components/ImageResizeCropTool.css"
+    "frontend/src/components/SideMenu.jsx"
+    "frontend/src/components/SideMenu.css"
+    "frontend/src/components/ConversionOptions.jsx"
+    "frontend/src/components/ConversionOptions.css"
+    "frontend/src/components/Header.jsx"
+    "frontend/src/components/Header.css"
+    "frontend/src/App.jsx"
+    "frontend/src/components/Home.jsx"
+    "frontend/src/components/Home.css"
+}
+
+foreach file $files {
+    puts "\n上傳 $file..."
+    spawn scp $file root@$server_ip:/opt/directconverter/$file
+    expect {
+        "password:" {
+            send "$password\r"
+            expect eof
+        }
+        timeout {
+            puts "上傳 $file 超時"
+            exit 1
+        }
+    }
+}
+
+puts "\n========================================="
+puts "✅ 所有檔案上傳完成"
+puts "=========================================\n"

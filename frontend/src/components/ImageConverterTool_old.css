@@ -1,0 +1,373 @@
+/* Flowbite 風格 - 圖片轉換工具 */
+.image-converter-tool {
+  padding: 24px;
+  background: #f9fafb;
+  min-height: calc(100vh - 80px);
+  animation: fadeIn 0.3s ease-out;
+}
+
+html.dark-mode .image-converter-tool {
+  background: #111827;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.tool-header {
+  margin-bottom: 24px;
+  padding: 0 4px;
+}
+
+.tool-header h2 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+html.dark-mode .tool-header h2 {
+  color: #f9fafb;
+}
+
+.tool-header p {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+html.dark-mode .tool-header p {
+  color: #9ca3af;
+}
+
+
+.tool-layout {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .tool-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tool-left {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  border: 1px solid #e5e7eb;
+}
+
+html.dark-mode .tool-left {
+  background: #1f2937;
+  border-color: #374151;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.3);
+}
+
+.tool-right {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  border: 1px solid #e5e7eb;
+  height: fit-content;
+}
+
+html.dark-mode .tool-right {
+  background: #1f2937;
+  border-color: #374151;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.3);
+}
+
+
+/* Flowbite 風格按鈕 */
+.button-group {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-primary {
+  background-color: #1C64F2;
+  color: white;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: #1A56DB;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: #374151;
+  border: 1px solid #d1d5db;
+}
+
+html.dark-mode .btn-secondary {
+  background-color: #374151;
+  color: #f9fafb;
+  border-color: #4b5563;
+}
+
+.btn-secondary:hover {
+  background-color: #f9fafb;
+}
+
+html.dark-mode .btn-secondary:hover {
+  background-color: #4b5563;
+}
+
+.converted-section {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid #e5e7eb;
+}
+
+html.dark-mode .converted-section {
+  border-top-color: #374151;
+}
+
+.download-list {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Flowbite 風格資訊卡片 */
+.tool-info-card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+html.dark-mode .tool-info-card {
+  background-color: #1f2937;
+  border-color: #374151;
+}
+
+.tool-right {
+  position: relative;
+}
+
+.tool-info-card.sticky {
+  position: sticky;
+  top: calc(var(--header-height) + 20px);
+}
+
+.tool-info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+html.dark-mode .tool-info-header {
+  border-bottom-color: #374151;
+}
+
+.tool-info-header h3 {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+html.dark-mode .tool-info-header h3 {
+  color: #f9fafb;
+}
+
+.tool-info-kicker {
+  margin: 0 0 4px 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  color: #6b7280;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+html.dark-mode .tool-info-kicker {
+  color: #9ca3af;
+}
+
+.tool-info-privacy {
+  background-color: #EFF6FF;
+  color: #1E40AF;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border: 1px solid #BFDBFE;
+}
+
+html.dark-mode .tool-info-privacy {
+  background-color: #1e3a8a;
+  color: #dbeafe;
+  border-color: #1e40af;
+}
+
+.tool-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.info-block {
+  background-color: #f9fafb;
+  border-radius: 8px;
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+html.dark-mode .info-block {
+  background-color: #111827;
+  border-color: #374151;
+}
+
+.info-title {
+  margin: 0 0 8px 0;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #374151;
+}
+
+html.dark-mode .info-title {
+  color: #d1d5db;
+}
+
+.info-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.info-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background-color: #EFF6FF;
+  color: #1E40AF;
+  font-weight: 500;
+  font-size: 0.75rem;
+  border: 1px solid #BFDBFE;
+}
+
+html.dark-mode .info-tag {
+  background-color: #1e3a8a;
+  color: #dbeafe;
+  border-color: #1e40af;
+}
+
+.info-steps {
+  margin: 12px 0 0 16px;
+  color: #4b5563;
+  line-height: 1.6;
+  font-size: 0.875rem;
+}
+
+html.dark-mode .info-steps {
+  color: #d1d5db;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .tool-layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .image-converter-tool {
+    padding: 15px;
+  }
+
+  .tool-left,
+  .tool-right {
+    padding: 15px;
+  }
+
+  .tool-header h2 {
+    font-size: 1.5em;
+  }
+
+  .tool-header p {
+    font-size: 0.9em;
+  }
+
+  .button-group {
+    gap: 10px;
+  }
+
+  .btn {
+    padding: 10px 16px;
+    font-size: 0.9em;
+    min-width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-converter-tool {
+    padding: 10px;
+  }
+
+  .tool-left,
+  .tool-right {
+    padding: 12px;
+  }
+
+  .tool-header h2 {
+    font-size: 1.2em;
+  }
+
+  .tool-header p {
+    display: none;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    min-width: unset;
+  }
+}

@@ -1,0 +1,219 @@
+#!/bin/bash
+
+# DirectConverter 手動部署指南
+# 請按順序複製每個命令區塊並執行
+
+echo "=============================================="
+echo "DirectConverter 部署指南"
+echo "=============================================="
+echo ""
+echo "伺服器 IP: 172.238.14.142"
+echo "Root 密碼: @Joendle396"
+echo ""
+echo "請按照以下步驟操作:"
+echo ""
+
+cat << 'EOF'
+
+==========================================
+步驟 1: 上傳代碼到伺服器
+==========================================
+
+在本機終端執行以下命令:
+
+cd /Users/dc/Desktop/code/DirectConverter
+
+# 方式 A: 使用 rsync (推薦,較快)
+rsync -avz --progress \
+  --exclude 'node_modules' \
+  --exclude '__pycache__' \
+  --exclude '.git' \
+  --exclude 'backend/uploads/*' \
+  --exclude 'backend/temp/*' \
+  --exclude 'frontend/dist' \
+  ./ root@172.238.14.142:/opt/directconverter/
+
+# 輸入密碼: @Joendle396
+
+# 方式 B: 使用 scp (替代方案)
+# ssh root@172.238.14.142 "mkdir -p /opt/directconverter"
+# scp -r ./* root@172.238.14.142:/opt/directconverter/
+
+
+==========================================
+步驟 2: SSH 連線到伺服器
+==========================================
+
+ssh root@172.238.14.142
+# 輸入密碼: @Joendle396
+
+
+==========================================
+步驟 3: 安裝 Docker (在伺服器上執行)
+==========================================
+
+# 更新系統
+apt-get update -y
+
+# 安裝 Docker
+curl -fsSL https://get.docker.com -o get-docker.sh
+sh get-docker.sh
+rm get-docker.sh
+systemctl enable docker
+systemctl start docker
+
+# 驗證安裝
+docker --version
+
+
+==========================================
+步驟 4: 安裝 Docker Compose (在伺服器上執行)
+==========================================
+
+curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
+
+# 驗證安裝
+docker-compose --version
+
+
+==========================================
+步驟 5: 安裝 Nginx (在伺服器上執行)
+==========================================
+
+apt-get install -y nginx
+
+# 驗證安裝
+nginx -v
+
+
+==========================================
+步驟 6: 配置應用 (在伺服器上執行)
+==========================================
+
+cd /opt/directconverter
+
+# 創建環境變數檔案
+cp .env.production .env
+
+# 查看環境變數 (確認正確)
+cat .env
+
+
+==========================================
+步驟 7: 配置 Nginx (在伺服器上執行)
+==========================================
+
+# 複製 Nginx 配置
+cp /opt/directconverter/nginx.conf /etc/nginx/sites-available/directconverter
+
+# 啟用站點
+ln -sf /etc/nginx/sites-available/directconverter /etc/nginx/sites-enabled/
+
+# 移除預設站點
+rm -f /etc/nginx/sites-enabled/default
+
+# 測試 Nginx 配置
+nginx -t
+
+# 重新載入 Nginx
+systemctl reload nginx
+
+
+==========================================
+步驟 8: 配置防火牆 (在伺服器上執行)
+==========================================
+
+ufw allow 22/tcp
+ufw allow 80/tcp
+ufw allow 443/tcp
+echo "y" | ufw enable
+
+
+==========================================
+步驟 9: 啟動應用 (在伺服器上執行)
+==========================================
+
+cd /opt/directconverter
+
+# 建置並啟動容器
+docker-compose up -d --build
+
+# 等待容器啟動
+echo "等待 10 秒讓容器完全啟動..."
+sleep 10
+
+# 查看容器狀態
+docker-compose ps
+
+# 查看日誌
+docker-compose logs --tail=30
+
+
+==========================================
+步驟 10: 驗證部署
+==========================================
+
+# 在伺服器上檢查服務
+curl http://localhost:3000
+curl http://localhost:8000/api/health
+
+# 在瀏覽器中打開
+http://172.238.14.142
+
+
+==========================================
+完成! 🎉
+==========================================
+
+您的應用現在應該可以通過以下網址訪問:
+http://172.238.14.142
+
+常用維護命令:
+--------------
+# 查看容器狀態
+docker-compose ps
+
+# 查看日誌
+docker-compose logs -f
+
+# 重啟服務
+docker-compose restart
+
+# 停止服務
+docker-compose down
+
+# 更新代碼後重新部署
+docker-compose down
+docker-compose up -d --build
+
+
+故障排除:
+----------
+# 如果無法訪問,檢查防火牆
+ufw status
+
+# 檢查 Nginx
+systemctl status nginx
+nginx -t
+
+# 檢查容器日誌
+docker-compose logs backend
+docker-compose logs frontend
+
+# 重新啟動所有服務
+systemctl restart nginx
+docker-compose restart
+
+
+安全建議:
+----------
+# 部署完成後,修改 root 密碼
+passwd
+
+# 或設定 SSH key 登入 (更安全)
+# 在本機執行:
+# ssh-keygen -t rsa -b 4096
+# ssh-copy-id root@172.238.14.142
+
+EOF

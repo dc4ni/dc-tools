@@ -1,0 +1,225 @@
+.file-uploader {
+  width: 100%;
+}
+
+.upload-area {
+  border: 2px dashed var(--border-color);
+  border-radius: 12px;
+  padding: 80px 40px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: var(--bg-primary);
+  position: relative;
+}
+
+.upload-area:hover,
+.upload-area.dragging {
+  border-color: var(--accent-color);
+  background: rgba(213, 68, 62, 0.05);
+  transform: translateY(-2px);
+}
+
+.upload-area h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 16px 0 8px 0;
+}
+
+.upload-area p {
+  font-size: 15px;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.upload-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.upload-error {
+  color: #d32f2f;
+  font-size: 14px;
+  margin-top: 16px;
+  padding: 12px;
+  background: rgba(211, 47, 47, 0.1);
+  border-radius: 8px;
+}
+
+.file-list {
+  margin-top: 24px;
+}
+
+.file-list h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.file-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.file-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  margin-bottom: 12px;
+  transition: all 0.2s ease;
+}
+
+.file-list li:hover {
+  border-color: var(--accent-color);
+  box-shadow: var(--shadow-sm);
+}
+
+.file-icon {
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.file-name {
+  flex: 1;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 120px;
+}
+
+.file-size {
+  font-size: 13px;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+}
+
+.upload-progress-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 150px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 6px;
+  background: var(--border-color);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-bar-inner {
+  height: 100%;
+  background: var(--accent-color);
+  transition: width 0.3s ease;
+}
+
+.upload-status-complete {
+  font-size: 12px;
+  color: #4caf50;
+  font-weight: 500;
+  text-align: center;
+}
+
+.upload-status-uploading {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+/* 下載按鈕區域 - 與移除按鈕並排 */
+.download-btn-inline {
+  flex-shrink: 0;
+}
+
+.download-btn-inline button {
+  padding: 8px 16px;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.remove-btn {
+  background: none;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 8px 16px;
+  font-size: 13px;
+  transition: all 0.2s ease;
+  border-radius: 6px;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.remove-btn:hover {
+  background: rgba(213, 68, 62, 0.1);
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+  .upload-area {
+    padding: 60px 24px;
+  }
+
+  .upload-area h3 {
+    font-size: 18px;
+  }
+
+  .upload-area p {
+    font-size: 14px;
+  }
+
+  .upload-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .file-list li {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .file-name {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .upload-progress-wrapper {
+    width: 100%;
+    order: 3;
+  }
+
+  .download-btn-inline {
+    width: 100%;
+    order: 4;
+  }
+
+  .download-btn-inline button {
+    width: 100%;
+  }
+
+  .remove-btn {
+    order: 5;
+    width: 100%;
+  }
+}

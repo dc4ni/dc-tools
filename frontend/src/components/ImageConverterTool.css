@@ -1,0 +1,185 @@
+.image-converter-tool {
+  padding-top: var(--header-height);
+  min-height: 100vh;
+  background: var(--bg-primary);
+}
+
+.tool-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+
+.tool-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.tool-header h1 {
+  font-size: 38px;
+  font-weight: 700;
+  margin: 0 0 12px 0;
+  color: var(--text-primary);
+}
+
+.tool-header p {
+  font-size: 17px;
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* 下載區域 - 置中顯示在最上方 */
+.download-section-top {
+  max-width: 800px;
+  margin: 0 auto 32px;
+  animation: slideDown 0.4s ease-out;
+}
+
+.download-section-top .tool-main-card {
+  background: linear-gradient(135deg, #f5f7fa 0%, #fff 100%);
+  border: 2px solid var(--accent-color);
+  box-shadow: 0 4px 20px rgba(213, 68, 62, 0.15);
+}
+
+.download-section-top .section-title {
+  color: var(--accent-color);
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 桌面版布局 */
+.tool-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  align-items: start;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* 上傳後顯示左右兩欄 */
+.tool-content.has-files {
+  grid-template-columns: 1fr 1fr;
+  max-width: 100%;
+}
+
+.tool-left-panel,
+.tool-right-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.tool-main-card {
+  background: var(--bg-secondary);
+  border-radius: 16px;
+  padding: 48px 40px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+}
+
+.tool-section {
+  margin-bottom: 32px;
+}
+
+.tool-section:last-child {
+  margin-bottom: 0;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+  color: var(--text-primary);
+}
+
+.divider {
+  height: 1px;
+  background: var(--border-color);
+  margin: 32px 0;
+}
+
+/* 平板和手機版改為單欄 */
+@media (max-width: 1024px) {
+  .tool-content,
+  .tool-content.has-files {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .tool-container {
+    padding: 32px 16px 60px;
+  }
+
+  .tool-header h1 {
+    font-size: 28px;
+  }
+
+  .tool-header p {
+    font-size: 15px;
+  }
+
+  .tool-main-card {
+    padding: 32px 24px;
+    border-radius: 12px;
+  }
+
+  .section-title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tool-container {
+    padding: 24px 12px 60px;
+  }
+
+  .tool-header {
+    margin-bottom: 24px;
+  }
+
+  .tool-header h1 {
+    font-size: 24px;
+  }
+
+  .tool-header p {
+    font-size: 14px;
+  }
+
+  .tool-content {
+    gap: 16px;
+  }
+
+  .tool-left-panel,
+  .tool-right-panel {
+    gap: 16px;
+  }
+
+  .tool-main-card {
+    padding: 20px 16px;
+    border-radius: 8px;
+  }
+
+  .section-title {
+    font-size: 14px;
+  }
+
+  .divider {
+    margin: 20px 0;
+  }
+}

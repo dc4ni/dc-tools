@@ -1,0 +1,610 @@
+[
+  {
+    "timestamp": "2025-11-30T09:19:05.056Z",
+    "message": "檔案上傳失敗",
+    "stack": "Error: 檔案上傳失敗\n    at handleConvert (http://localhost:3000/src/components/ImageConverterTool.jsx?t=1764494147699:37:32)",
+    "context": {
+      "context": "handleConvert"
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/"
+  },
+  {
+    "timestamp": "2025-11-30T09:19:18.310Z",
+    "message": "檔案上傳失敗",
+    "stack": "Error: 檔案上傳失敗\n    at handleConvert (http://localhost:3000/src/components/ImageConverterTool.jsx?t=1764494147699:37:32)",
+    "context": {
+      "context": "handleConvert"
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/"
+  },
+  {
+    "timestamp": "2025-12-01T00:58:23.680Z",
+    "message": "SideMenu is not defined",
+    "stack": "ReferenceError: SideMenu is not defined\n    at App (http://localhost:3000/src/App.jsx?t=1764550703608:261:9)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:11546:26)\n    at updateFunctionComponent (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:14580:28)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:15922:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3731:39)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19763:15)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19196:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19135:13)",
+    "context": {
+      "type": "UncaughtError",
+      "filename": "http://localhost:3000/src/App.jsx?t=1764550703608",
+      "lineno": 261,
+      "colno": 9
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.104.0 Chrome/138.0.7204.235 Electron/37.3.1 Safari/537.36",
+    "url": "http://localhost:3000/?id=f408c660-b165-4205-9556-8fe6028bc102&vscodeBrowserReqId=1764492195887"
+  },
+  {
+    "timestamp": "2025-12-01T00:58:23.676Z",
+    "message": "SideMenu is not defined",
+    "stack": "ReferenceError: SideMenu is not defined\n    at App (http://localhost:3000/src/App.jsx?t=1764550703608:261:9)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:11546:26)\n    at updateFunctionComponent (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:14580:28)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:15922:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3731:39)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19763:15)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19196:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19135:13)",
+    "context": {
+      "type": "UncaughtError",
+      "filename": "http://localhost:3000/src/App.jsx?t=1764550703608",
+      "lineno": 261,
+      "colno": 9
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.104.0 Chrome/138.0.7204.235 Electron/37.3.1 Safari/537.36",
+    "url": "http://localhost:3000/?id=f408c660-b165-4205-9556-8fe6028bc102&vscodeBrowserReqId=1764492195887"
+  },
+  {
+    "timestamp": "2025-12-01T00:58:23.682Z",
+    "message": "SideMenu is not defined",
+    "stack": "ReferenceError: SideMenu is not defined\n    at App (http://localhost:3000/src/App.jsx?t=1764550703608:261:9)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:11546:26)\n    at updateFunctionComponent (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:14580:28)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:15922:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3731:39)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19763:15)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19196:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19135:13)",
+    "context": {
+      "type": "UncaughtError",
+      "filename": "http://localhost:3000/src/App.jsx?t=1764550703608",
+      "lineno": 261,
+      "colno": 9
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.104.0 Chrome/138.0.7204.235 Electron/37.3.1 Safari/537.36",
+    "url": "http://localhost:3000/?id=f408c660-b165-4205-9556-8fe6028bc102&vscodeBrowserReqId=1764492195887"
+  },
+  {
+    "timestamp": "2025-12-01T00:58:23.682Z",
+    "message": "SideMenu is not defined",
+    "stack": "ReferenceError: SideMenu is not defined\n    at App (http://localhost:3000/src/App.jsx?t=1764550703608:261:9)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:11546:26)\n    at updateFunctionComponent (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:14580:28)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:15922:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3731:39)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19763:15)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19196:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19135:13)",
+    "context": {
+      "type": "UncaughtError",
+      "filename": "http://localhost:3000/src/App.jsx?t=1764550703608",
+      "lineno": 261,
+      "colno": 9
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.104.0 Chrome/138.0.7204.235 Electron/37.3.1 Safari/537.36",
+    "url": "http://localhost:3000/?id=f408c660-b165-4205-9556-8fe6028bc102&vscodeBrowserReqId=1764492195887"
+  },
+  {
+    "timestamp": "2025-12-01T00:58:23.684Z",
+    "message": "SideMenu is not defined",
+    "stack": "ReferenceError: SideMenu is not defined\n    at App (http://localhost:3000/src/App.jsx?t=1764550703608:261:9)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:11546:26)\n    at updateFunctionComponent (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:14580:28)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:15922:22)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19751:22)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19196:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19135:13)\n    at renderRootSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19114:15)\n    at recoverFromConcurrentError (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:18734:28)\n    at performSyncWorkOnRoot (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:18877:28)",
+    "context": {
+      "type": "UnhandledPromiseRejection"
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.104.0 Chrome/138.0.7204.235 Electron/37.3.1 Safari/537.36",
+    "url": "http://localhost:3000/?id=f408c660-b165-4205-9556-8fe6028bc102&vscodeBrowserReqId=1764492195887"
+  },
+  {
+    "timestamp": "2025-12-01T00:58:23.684Z",
+    "message": "SideMenu is not defined",
+    "stack": "ReferenceError: SideMenu is not defined\n    at App (http://localhost:3000/src/App.jsx?t=1764550703608:261:9)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:11546:26)\n    at updateFunctionComponent (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:14580:28)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:15922:22)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19751:22)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19196:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19135:13)\n    at renderRootSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19114:15)\n    at recoverFromConcurrentError (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:18734:28)\n    at performSyncWorkOnRoot (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:18877:28)",
+    "context": {
+      "type": "UnhandledPromiseRejection"
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.104.0 Chrome/138.0.7204.235 Electron/37.3.1 Safari/537.36",
+    "url": "http://localhost:3000/?id=f408c660-b165-4205-9556-8fe6028bc102&vscodeBrowserReqId=1764492195887"
+  },
+  {
+    "timestamp": "2025-12-01T00:58:23.776Z",
+    "message": "SideMenu is not defined",
+    "stack": "ReferenceError: SideMenu is not defined\n    at App (http://localhost:3000/src/App.jsx?t=1764550703608:261:9)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:11546:26)\n    at updateFunctionComponent (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:14580:28)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:15922:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3731:39)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19763:15)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19196:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19135:13)",
+    "context": {
+      "type": "UncaughtError",
+      "filename": "http://localhost:3000/src/App.jsx?t=1764550703608",
+      "lineno": 261,
+      "colno": 9
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/"
+  },
+  {
+    "timestamp": "2025-12-01T00:58:23.777Z",
+    "message": "SideMenu is not defined",
+    "stack": "ReferenceError: SideMenu is not defined\n    at App (http://localhost:3000/src/App.jsx?t=1764550703608:261:9)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:11546:26)\n    at updateFunctionComponent (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:14580:28)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:15922:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3731:39)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19763:15)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19196:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19135:13)",
+    "context": {
+      "type": "UncaughtError",
+      "filename": "http://localhost:3000/src/App.jsx?t=1764550703608",
+      "lineno": 261,
+      "colno": 9
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/"
+  },
+  {
+    "timestamp": "2025-12-01T00:58:23.779Z",
+    "message": "SideMenu is not defined",
+    "stack": "ReferenceError: SideMenu is not defined\n    at App (http://localhost:3000/src/App.jsx?t=1764550703608:261:9)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:11546:26)\n    at updateFunctionComponent (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:14580:28)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:15922:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3731:39)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19763:15)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19196:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19135:13)",
+    "context": {
+      "type": "UncaughtError",
+      "filename": "http://localhost:3000/src/App.jsx?t=1764550703608",
+      "lineno": 261,
+      "colno": 9
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/"
+  },
+  {
+    "timestamp": "2025-12-01T00:58:23.779Z",
+    "message": "SideMenu is not defined",
+    "stack": "ReferenceError: SideMenu is not defined\n    at App (http://localhost:3000/src/App.jsx?t=1764550703608:261:9)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:11546:26)\n    at updateFunctionComponent (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:14580:28)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:15922:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3731:39)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19763:15)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19196:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19135:13)",
+    "context": {
+      "type": "UncaughtError",
+      "filename": "http://localhost:3000/src/App.jsx?t=1764550703608",
+      "lineno": 261,
+      "colno": 9
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/"
+  },
+  {
+    "timestamp": "2025-12-01T00:58:23.783Z",
+    "message": "SideMenu is not defined",
+    "stack": "ReferenceError: SideMenu is not defined\n    at App (http://localhost:3000/src/App.jsx?t=1764550703608:261:9)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:11546:26)\n    at updateFunctionComponent (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:14580:28)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:15922:22)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19751:22)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19196:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19135:13)\n    at renderRootSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19114:15)\n    at recoverFromConcurrentError (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:18734:28)\n    at performSyncWorkOnRoot (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:18877:28)",
+    "context": {
+      "type": "UnhandledPromiseRejection"
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/"
+  },
+  {
+    "timestamp": "2025-12-01T00:58:23.783Z",
+    "message": "SideMenu is not defined",
+    "stack": "ReferenceError: SideMenu is not defined\n    at App (http://localhost:3000/src/App.jsx?t=1764550703608:261:9)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:11546:26)\n    at updateFunctionComponent (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:14580:28)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:15922:22)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19751:22)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19196:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19135:13)\n    at renderRootSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19114:15)\n    at recoverFromConcurrentError (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:18734:28)\n    at performSyncWorkOnRoot (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:18877:28)",
+    "context": {
+      "type": "UnhandledPromiseRejection"
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/"
+  },
+  {
+    "timestamp": "2025-12-01T00:58:25.871Z",
+    "message": "recentErrors is not defined",
+    "stack": "ReferenceError: recentErrors is not defined\n    at App (http://localhost:3000/src/App.jsx?t=1764550705836:237:9)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:11546:26)\n    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:14924:21)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:15912:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3731:39)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19763:15)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19196:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19135:13)",
+    "context": {
+      "type": "UncaughtError",
+      "filename": "http://localhost:3000/src/App.jsx?t=1764550705836",
+      "lineno": 237,
+      "colno": 9
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.104.0 Chrome/138.0.7204.235 Electron/37.3.1 Safari/537.36",
+    "url": "http://localhost:3000/?id=f408c660-b165-4205-9556-8fe6028bc102&vscodeBrowserReqId=1764492195887"
+  },
+  {
+    "timestamp": "2025-12-01T00:58:25.871Z",
+    "message": "recentErrors is not defined",
+    "stack": "ReferenceError: recentErrors is not defined\n    at App (http://localhost:3000/src/App.jsx?t=1764550705836:237:9)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:11546:26)\n    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:14924:21)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:15912:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3731:39)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19763:15)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19196:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19135:13)",
+    "context": {
+      "type": "UncaughtError",
+      "filename": "http://localhost:3000/src/App.jsx?t=1764550705836",
+      "lineno": 237,
+      "colno": 9
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.104.0 Chrome/138.0.7204.235 Electron/37.3.1 Safari/537.36",
+    "url": "http://localhost:3000/?id=f408c660-b165-4205-9556-8fe6028bc102&vscodeBrowserReqId=1764492195887"
+  },
+  {
+    "timestamp": "2025-12-01T00:58:25.871Z",
+    "message": "recentErrors is not defined",
+    "stack": "ReferenceError: recentErrors is not defined\n    at App (http://localhost:3000/src/App.jsx?t=1764550705836:237:9)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:11546:26)\n    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:14924:21)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:15912:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3731:39)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19763:15)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19196:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19135:13)",
+    "context": {
+      "type": "UncaughtError",
+      "filename": "http://localhost:3000/src/App.jsx?t=1764550705836",
+      "lineno": 237,
+      "colno": 9
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.104.0 Chrome/138.0.7204.235 Electron/37.3.1 Safari/537.36",
+    "url": "http://localhost:3000/?id=f408c660-b165-4205-9556-8fe6028bc102&vscodeBrowserReqId=1764492195887"
+  },
+  {
+    "timestamp": "2025-12-01T00:58:25.872Z",
+    "message": "recentErrors is not defined",
+    "stack": "ReferenceError: recentErrors is not defined\n    at App (http://localhost:3000/src/App.jsx?t=1764550705836:237:9)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:11546:26)\n    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:14924:21)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:15912:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3731:39)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19763:15)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19196:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19135:13)",
+    "context": {
+      "type": "UncaughtError",
+      "filename": "http://localhost:3000/src/App.jsx?t=1764550705836",
+      "lineno": 237,
+      "colno": 9
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.104.0 Chrome/138.0.7204.235 Electron/37.3.1 Safari/537.36",
+    "url": "http://localhost:3000/?id=f408c660-b165-4205-9556-8fe6028bc102&vscodeBrowserReqId=1764492195887"
+  },
+  {
+    "timestamp": "2025-12-01T00:58:25.872Z",
+    "message": "recentErrors is not defined",
+    "stack": "ReferenceError: recentErrors is not defined\n    at App (http://localhost:3000/src/App.jsx?t=1764550705836:237:9)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:11546:26)\n    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:14924:21)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:15912:22)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19751:22)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19196:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19135:13)\n    at renderRootSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19114:15)\n    at recoverFromConcurrentError (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:18734:28)\n    at performSyncWorkOnRoot (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:18877:28)",
+    "context": {
+      "type": "UnhandledPromiseRejection"
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.104.0 Chrome/138.0.7204.235 Electron/37.3.1 Safari/537.36",
+    "url": "http://localhost:3000/?id=f408c660-b165-4205-9556-8fe6028bc102&vscodeBrowserReqId=1764492195887"
+  },
+  {
+    "timestamp": "2025-12-01T00:58:25.872Z",
+    "message": "recentErrors is not defined",
+    "stack": "ReferenceError: recentErrors is not defined\n    at App (http://localhost:3000/src/App.jsx?t=1764550705836:237:9)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:11546:26)\n    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:14924:21)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:15912:22)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19751:22)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19196:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19135:13)\n    at renderRootSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19114:15)\n    at recoverFromConcurrentError (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:18734:28)\n    at performSyncWorkOnRoot (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:18877:28)",
+    "context": {
+      "type": "UnhandledPromiseRejection"
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.104.0 Chrome/138.0.7204.235 Electron/37.3.1 Safari/537.36",
+    "url": "http://localhost:3000/?id=f408c660-b165-4205-9556-8fe6028bc102&vscodeBrowserReqId=1764492195887"
+  },
+  {
+    "timestamp": "2025-12-01T00:58:26.772Z",
+    "message": "recentErrors is not defined",
+    "stack": "ReferenceError: recentErrors is not defined\n    at App (http://localhost:3000/src/App.jsx?t=1764550705836:237:9)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:11546:26)\n    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:14924:21)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:15912:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3731:39)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19763:15)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19196:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19135:13)",
+    "context": {
+      "type": "UncaughtError",
+      "filename": "http://localhost:3000/src/App.jsx?t=1764550705836",
+      "lineno": 237,
+      "colno": 9
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/"
+  },
+  {
+    "timestamp": "2025-12-01T00:58:26.773Z",
+    "message": "recentErrors is not defined",
+    "stack": "ReferenceError: recentErrors is not defined\n    at App (http://localhost:3000/src/App.jsx?t=1764550705836:237:9)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:11546:26)\n    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:14924:21)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:15912:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3731:39)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19763:15)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19196:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19135:13)",
+    "context": {
+      "type": "UncaughtError",
+      "filename": "http://localhost:3000/src/App.jsx?t=1764550705836",
+      "lineno": 237,
+      "colno": 9
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/"
+  },
+  {
+    "timestamp": "2025-12-01T00:58:26.775Z",
+    "message": "recentErrors is not defined",
+    "stack": "ReferenceError: recentErrors is not defined\n    at App (http://localhost:3000/src/App.jsx?t=1764550705836:237:9)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:11546:26)\n    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:14924:21)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:15912:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3731:39)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19763:15)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19196:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19135:13)",
+    "context": {
+      "type": "UncaughtError",
+      "filename": "http://localhost:3000/src/App.jsx?t=1764550705836",
+      "lineno": 237,
+      "colno": 9
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/"
+  },
+  {
+    "timestamp": "2025-12-01T00:58:26.775Z",
+    "message": "recentErrors is not defined",
+    "stack": "ReferenceError: recentErrors is not defined\n    at App (http://localhost:3000/src/App.jsx?t=1764550705836:237:9)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:11546:26)\n    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:14924:21)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:15912:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3731:39)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19763:15)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19196:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19135:13)",
+    "context": {
+      "type": "UncaughtError",
+      "filename": "http://localhost:3000/src/App.jsx?t=1764550705836",
+      "lineno": 237,
+      "colno": 9
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/"
+  },
+  {
+    "timestamp": "2025-12-01T00:58:26.775Z",
+    "message": "recentErrors is not defined",
+    "stack": "ReferenceError: recentErrors is not defined\n    at App (http://localhost:3000/src/App.jsx?t=1764550705836:237:9)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:11546:26)\n    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:14924:21)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:15912:22)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19751:22)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19196:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19135:13)\n    at renderRootSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19114:15)\n    at recoverFromConcurrentError (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:18734:28)\n    at performSyncWorkOnRoot (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:18877:28)",
+    "context": {
+      "type": "UnhandledPromiseRejection"
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/"
+  },
+  {
+    "timestamp": "2025-12-01T00:58:26.776Z",
+    "message": "recentErrors is not defined",
+    "stack": "ReferenceError: recentErrors is not defined\n    at App (http://localhost:3000/src/App.jsx?t=1764550705836:237:9)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:11546:26)\n    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:14924:21)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:15912:22)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19751:22)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19196:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19135:13)\n    at renderRootSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19114:15)\n    at recoverFromConcurrentError (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:18734:28)\n    at performSyncWorkOnRoot (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:18877:28)",
+    "context": {
+      "type": "UnhandledPromiseRejection"
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/"
+  },
+  {
+    "timestamp": "2025-12-01T00:58:28.310Z",
+    "message": "recentErrors is not defined",
+    "stack": "ReferenceError: recentErrors is not defined\n    at App (http://localhost:3000/src/App.jsx?t=1764550708280:195:9)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:11546:26)\n    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:14924:21)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:15912:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3731:39)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19763:15)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19196:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19135:13)",
+    "context": {
+      "type": "UncaughtError",
+      "filename": "http://localhost:3000/src/App.jsx?t=1764550708280",
+      "lineno": 195,
+      "colno": 9
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.104.0 Chrome/138.0.7204.235 Electron/37.3.1 Safari/537.36",
+    "url": "http://localhost:3000/?id=f408c660-b165-4205-9556-8fe6028bc102&vscodeBrowserReqId=1764492195887"
+  },
+  {
+    "timestamp": "2025-12-01T00:58:28.311Z",
+    "message": "recentErrors is not defined",
+    "stack": "ReferenceError: recentErrors is not defined\n    at App (http://localhost:3000/src/App.jsx?t=1764550708280:195:9)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:11546:26)\n    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:14924:21)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:15912:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3731:39)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19763:15)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19196:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19135:13)",
+    "context": {
+      "type": "UncaughtError",
+      "filename": "http://localhost:3000/src/App.jsx?t=1764550708280",
+      "lineno": 195,
+      "colno": 9
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.104.0 Chrome/138.0.7204.235 Electron/37.3.1 Safari/537.36",
+    "url": "http://localhost:3000/?id=f408c660-b165-4205-9556-8fe6028bc102&vscodeBrowserReqId=1764492195887"
+  },
+  {
+    "timestamp": "2025-12-01T00:58:28.311Z",
+    "message": "recentErrors is not defined",
+    "stack": "ReferenceError: recentErrors is not defined\n    at App (http://localhost:3000/src/App.jsx?t=1764550708280:195:9)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:11546:26)\n    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:14924:21)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:15912:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3731:39)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19763:15)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19196:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19135:13)",
+    "context": {
+      "type": "UncaughtError",
+      "filename": "http://localhost:3000/src/App.jsx?t=1764550708280",
+      "lineno": 195,
+      "colno": 9
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.104.0 Chrome/138.0.7204.235 Electron/37.3.1 Safari/537.36",
+    "url": "http://localhost:3000/?id=f408c660-b165-4205-9556-8fe6028bc102&vscodeBrowserReqId=1764492195887"
+  },
+  {
+    "timestamp": "2025-12-01T00:58:28.311Z",
+    "message": "recentErrors is not defined",
+    "stack": "ReferenceError: recentErrors is not defined\n    at App (http://localhost:3000/src/App.jsx?t=1764550708280:195:9)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:11546:26)\n    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:14924:21)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:15912:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3731:39)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19763:15)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19196:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19135:13)",
+    "context": {
+      "type": "UncaughtError",
+      "filename": "http://localhost:3000/src/App.jsx?t=1764550708280",
+      "lineno": 195,
+      "colno": 9
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.104.0 Chrome/138.0.7204.235 Electron/37.3.1 Safari/537.36",
+    "url": "http://localhost:3000/?id=f408c660-b165-4205-9556-8fe6028bc102&vscodeBrowserReqId=1764492195887"
+  },
+  {
+    "timestamp": "2025-12-01T00:58:28.312Z",
+    "message": "recentErrors is not defined",
+    "stack": "ReferenceError: recentErrors is not defined\n    at App (http://localhost:3000/src/App.jsx?t=1764550708280:195:9)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:11546:26)\n    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:14924:21)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:15912:22)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19751:22)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19196:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19135:13)\n    at renderRootSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19114:15)\n    at recoverFromConcurrentError (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:18734:28)\n    at performSyncWorkOnRoot (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:18877:28)",
+    "context": {
+      "type": "UnhandledPromiseRejection"
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.104.0 Chrome/138.0.7204.235 Electron/37.3.1 Safari/537.36",
+    "url": "http://localhost:3000/?id=f408c660-b165-4205-9556-8fe6028bc102&vscodeBrowserReqId=1764492195887"
+  },
+  {
+    "timestamp": "2025-12-01T00:58:28.312Z",
+    "message": "recentErrors is not defined",
+    "stack": "ReferenceError: recentErrors is not defined\n    at App (http://localhost:3000/src/App.jsx?t=1764550708280:195:9)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:11546:26)\n    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:14924:21)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:15912:22)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19751:22)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19196:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19135:13)\n    at renderRootSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19114:15)\n    at recoverFromConcurrentError (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:18734:28)\n    at performSyncWorkOnRoot (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:18877:28)",
+    "context": {
+      "type": "UnhandledPromiseRejection"
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.104.0 Chrome/138.0.7204.235 Electron/37.3.1 Safari/537.36",
+    "url": "http://localhost:3000/?id=f408c660-b165-4205-9556-8fe6028bc102&vscodeBrowserReqId=1764492195887"
+  },
+  {
+    "timestamp": "2025-12-01T00:58:28.771Z",
+    "message": "recentErrors is not defined",
+    "stack": "ReferenceError: recentErrors is not defined\n    at App (http://localhost:3000/src/App.jsx?t=1764550708280:195:9)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:11546:26)\n    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:14924:21)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:15912:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3731:39)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19763:15)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19196:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19135:13)",
+    "context": {
+      "type": "UncaughtError",
+      "filename": "http://localhost:3000/src/App.jsx?t=1764550708280",
+      "lineno": 195,
+      "colno": 9
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/"
+  },
+  {
+    "timestamp": "2025-12-01T00:58:28.773Z",
+    "message": "recentErrors is not defined",
+    "stack": "ReferenceError: recentErrors is not defined\n    at App (http://localhost:3000/src/App.jsx?t=1764550708280:195:9)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:11546:26)\n    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:14924:21)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:15912:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3731:39)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19763:15)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19196:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19135:13)",
+    "context": {
+      "type": "UncaughtError",
+      "filename": "http://localhost:3000/src/App.jsx?t=1764550708280",
+      "lineno": 195,
+      "colno": 9
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/"
+  },
+  {
+    "timestamp": "2025-12-01T00:58:28.775Z",
+    "message": "recentErrors is not defined",
+    "stack": "ReferenceError: recentErrors is not defined\n    at App (http://localhost:3000/src/App.jsx?t=1764550708280:195:9)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:11546:26)\n    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:14924:21)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:15912:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3731:39)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19763:15)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19196:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19135:13)",
+    "context": {
+      "type": "UncaughtError",
+      "filename": "http://localhost:3000/src/App.jsx?t=1764550708280",
+      "lineno": 195,
+      "colno": 9
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/"
+  },
+  {
+    "timestamp": "2025-12-01T00:58:28.775Z",
+    "message": "recentErrors is not defined",
+    "stack": "ReferenceError: recentErrors is not defined\n    at App (http://localhost:3000/src/App.jsx?t=1764550708280:195:9)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:11546:26)\n    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:14924:21)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:15912:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3731:39)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19763:15)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19196:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19135:13)",
+    "context": {
+      "type": "UncaughtError",
+      "filename": "http://localhost:3000/src/App.jsx?t=1764550708280",
+      "lineno": 195,
+      "colno": 9
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/"
+  },
+  {
+    "timestamp": "2025-12-01T00:58:28.775Z",
+    "message": "recentErrors is not defined",
+    "stack": "ReferenceError: recentErrors is not defined\n    at App (http://localhost:3000/src/App.jsx?t=1764550708280:195:9)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:11546:26)\n    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:14924:21)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:15912:22)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19751:22)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19196:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19135:13)\n    at renderRootSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19114:15)\n    at recoverFromConcurrentError (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:18734:28)\n    at performSyncWorkOnRoot (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:18877:28)",
+    "context": {
+      "type": "UnhandledPromiseRejection"
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/"
+  },
+  {
+    "timestamp": "2025-12-01T00:58:28.776Z",
+    "message": "recentErrors is not defined",
+    "stack": "ReferenceError: recentErrors is not defined\n    at App (http://localhost:3000/src/App.jsx?t=1764550708280:195:9)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:11546:26)\n    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:14924:21)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:15912:22)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19751:22)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19196:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19135:13)\n    at renderRootSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19114:15)\n    at recoverFromConcurrentError (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:18734:28)\n    at performSyncWorkOnRoot (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:18877:28)",
+    "context": {
+      "type": "UnhandledPromiseRejection"
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/"
+  },
+  {
+    "timestamp": "2025-12-01T01:49:06.776Z",
+    "message": "onFilesUpload is not a function",
+    "stack": "TypeError: onFilesUpload is not a function\n    at handleFileChange (http://localhost:3000/src/components/FileUploader.jsx:88:32)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3731:39)\n    at invokeGuardedCallbackAndCatchFirstError (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3734:33)\n    at executeDispatch (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:7012:11)\n    at processDispatchQueueItemsInOrder (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:7032:15)\n    at processDispatchQueue (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:7041:13)\n    at dispatchEventsForPlugins (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:7049:11)\n    at http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:7172:20",
+    "context": {
+      "type": "UncaughtError",
+      "filename": "http://localhost:3000/src/components/FileUploader.jsx",
+      "lineno": 88,
+      "colno": 32
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/"
+  },
+  {
+    "timestamp": "2025-12-01T01:49:06.777Z",
+    "message": "onFilesUpload is not a function",
+    "stack": "TypeError: onFilesUpload is not a function\n    at handleFileChange (http://localhost:3000/src/components/FileUploader.jsx:88:32)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3731:39)\n    at invokeGuardedCallbackAndCatchFirstError (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3734:33)\n    at executeDispatch (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:7012:11)\n    at processDispatchQueueItemsInOrder (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:7032:15)\n    at processDispatchQueue (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:7041:13)\n    at dispatchEventsForPlugins (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:7049:11)\n    at http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:7172:20",
+    "context": {
+      "type": "UncaughtError",
+      "filename": "http://localhost:3000/src/components/FileUploader.jsx",
+      "lineno": 88,
+      "colno": 32
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/"
+  },
+  {
+    "timestamp": "2025-12-01T01:49:06.777Z",
+    "message": "onFilesUpload is not a function",
+    "stack": "TypeError: onFilesUpload is not a function\n    at handleFileChange (http://localhost:3000/src/components/FileUploader.jsx:88:32)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3731:39)\n    at invokeGuardedCallbackAndCatchFirstError (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3734:33)\n    at executeDispatch (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:7012:11)\n    at processDispatchQueueItemsInOrder (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:7032:15)\n    at processDispatchQueue (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:7041:13)\n    at dispatchEventsForPlugins (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:7049:11)\n    at http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:7172:20",
+    "context": {
+      "type": "UncaughtError",
+      "filename": "http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6",
+      "lineno": 3748,
+      "colno": 13
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/"
+  },
+  {
+    "timestamp": "2025-12-01T01:49:06.778Z",
+    "message": "onFilesUpload is not a function",
+    "stack": "TypeError: onFilesUpload is not a function\n    at handleFileChange (http://localhost:3000/src/components/FileUploader.jsx:88:32)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3731:39)\n    at invokeGuardedCallbackAndCatchFirstError (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3734:33)\n    at executeDispatch (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:7012:11)\n    at processDispatchQueueItemsInOrder (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:7032:15)\n    at processDispatchQueue (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:7041:13)\n    at dispatchEventsForPlugins (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:7049:11)\n    at http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:7172:20",
+    "context": {
+      "type": "UncaughtError",
+      "filename": "http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6",
+      "lineno": 3748,
+      "colno": 13
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/"
+  },
+  {
+    "timestamp": "2025-12-01T01:53:02.653Z",
+    "message": "onFilesUpload is not a function",
+    "stack": "TypeError: onFilesUpload is not a function\n    at handleFileChange (http://localhost:3000/src/components/FileUploader.jsx?t=1764553961080:88:32)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3731:39)\n    at invokeGuardedCallbackAndCatchFirstError (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3734:33)\n    at executeDispatch (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:7012:11)\n    at processDispatchQueueItemsInOrder (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:7032:15)\n    at processDispatchQueue (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:7041:13)\n    at dispatchEventsForPlugins (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:7049:11)\n    at http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:7172:20",
+    "context": {
+      "type": "UncaughtError",
+      "filename": "http://localhost:3000/src/components/FileUploader.jsx?t=1764553961080",
+      "lineno": 88,
+      "colno": 32
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/"
+  },
+  {
+    "timestamp": "2025-12-01T01:53:02.653Z",
+    "message": "onFilesUpload is not a function",
+    "stack": "TypeError: onFilesUpload is not a function\n    at handleFileChange (http://localhost:3000/src/components/FileUploader.jsx?t=1764553961080:88:32)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3731:39)\n    at invokeGuardedCallbackAndCatchFirstError (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3734:33)\n    at executeDispatch (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:7012:11)\n    at processDispatchQueueItemsInOrder (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:7032:15)\n    at processDispatchQueue (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:7041:13)\n    at dispatchEventsForPlugins (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:7049:11)\n    at http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:7172:20",
+    "context": {
+      "type": "UncaughtError",
+      "filename": "http://localhost:3000/src/components/FileUploader.jsx?t=1764553961080",
+      "lineno": 88,
+      "colno": 32
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/"
+  },
+  {
+    "timestamp": "2025-12-01T01:53:02.653Z",
+    "message": "onFilesUpload is not a function",
+    "stack": "TypeError: onFilesUpload is not a function\n    at handleFileChange (http://localhost:3000/src/components/FileUploader.jsx?t=1764553961080:88:32)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3731:39)\n    at invokeGuardedCallbackAndCatchFirstError (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3734:33)\n    at executeDispatch (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:7012:11)\n    at processDispatchQueueItemsInOrder (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:7032:15)\n    at processDispatchQueue (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:7041:13)\n    at dispatchEventsForPlugins (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:7049:11)\n    at http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:7172:20",
+    "context": {
+      "type": "UncaughtError",
+      "filename": "http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6",
+      "lineno": 3748,
+      "colno": 13
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/"
+  },
+  {
+    "timestamp": "2025-12-01T01:53:02.653Z",
+    "message": "onFilesUpload is not a function",
+    "stack": "TypeError: onFilesUpload is not a function\n    at handleFileChange (http://localhost:3000/src/components/FileUploader.jsx?t=1764553961080:88:32)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3731:39)\n    at invokeGuardedCallbackAndCatchFirstError (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3734:33)\n    at executeDispatch (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:7012:11)\n    at processDispatchQueueItemsInOrder (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:7032:15)\n    at processDispatchQueue (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:7041:13)\n    at dispatchEventsForPlugins (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:7049:11)\n    at http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:7172:20",
+    "context": {
+      "type": "UncaughtError",
+      "filename": "http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6",
+      "lineno": 3748,
+      "colno": 13
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/"
+  },
+  {
+    "timestamp": "2025-12-01T02:08:27.229Z",
+    "message": "Cannot read properties of undefined (reading 'original_filename')",
+    "stack": "TypeError: Cannot read properties of undefined (reading 'original_filename')\n    at DownloadButton (http://localhost:3000/src/components/DownloadButton.jsx?t=1764554240590:55:84)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:11546:26)\n    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:14924:21)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:15912:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3731:39)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19763:15)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19196:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19135:13)",
+    "context": {
+      "type": "UncaughtError",
+      "filename": "http://localhost:3000/src/components/DownloadButton.jsx?t=1764554240590",
+      "lineno": 55,
+      "colno": 84
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/"
+  },
+  {
+    "timestamp": "2025-12-01T02:08:27.230Z",
+    "message": "Cannot read properties of undefined (reading 'original_filename')",
+    "stack": "TypeError: Cannot read properties of undefined (reading 'original_filename')\n    at DownloadButton (http://localhost:3000/src/components/DownloadButton.jsx?t=1764554240590:55:84)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:11546:26)\n    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:14924:21)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:15912:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3731:39)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19763:15)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19196:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19135:13)",
+    "context": {
+      "type": "UncaughtError",
+      "filename": "http://localhost:3000/src/components/DownloadButton.jsx?t=1764554240590",
+      "lineno": 55,
+      "colno": 84
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/"
+  },
+  {
+    "timestamp": "2025-12-01T02:08:27.234Z",
+    "message": "Cannot read properties of undefined (reading 'original_filename')",
+    "stack": "TypeError: Cannot read properties of undefined (reading 'original_filename')\n    at DownloadButton (http://localhost:3000/src/components/DownloadButton.jsx?t=1764554240590:55:84)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:11546:26)\n    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:14924:21)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:15912:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3731:39)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19763:15)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19196:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19135:13)",
+    "context": {
+      "type": "UncaughtError",
+      "filename": "http://localhost:3000/src/components/DownloadButton.jsx?t=1764554240590",
+      "lineno": 55,
+      "colno": 84
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/"
+  },
+  {
+    "timestamp": "2025-12-01T02:08:27.234Z",
+    "message": "Cannot read properties of undefined (reading 'original_filename')",
+    "stack": "TypeError: Cannot read properties of undefined (reading 'original_filename')\n    at DownloadButton (http://localhost:3000/src/components/DownloadButton.jsx?t=1764554240590:55:84)\n    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:11546:26)\n    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:14924:21)\n    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:15912:22)\n    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3672:22)\n    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3697:24)\n    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:3731:39)\n    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19763:15)\n    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19196:20)\n    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-373CG7ZK.js?v=92ee1ba6:19135:13)",
+    "context": {
+      "type": "UncaughtError",
+      "filename": "http://localhost:3000/src/components/DownloadButton.jsx?t=1764554240590",
+      "lineno": 55,
+      "colno": 84
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+    "url": "http://localhost:3000/"
+  }
+]

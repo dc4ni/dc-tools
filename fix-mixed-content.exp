@@ -1,0 +1,50 @@
+#!/usr/bin/expect -f
+set timeout 300
+
+puts "\n=== 修復 Mixed Content 問題 ===\n"
+
+spawn ssh root@172.238.14.142
+expect "password:"
+send "@Joendle396\r"
+expect "root@*"
+
+send "cd /opt/directconverter\r"
+expect "root@*"
+
+send "docker-compose stop frontend\r"
+expect "root@*"
+
+send "docker-compose rm -f frontend\r"
+expect {
+    "? Are you sure?" {
+        send "y\r"
+        exp_continue
+    }
+    "root@*" {}
+}
+
+send "docker images | grep directconverter_frontend\r"
+expect "root@*"
+
+send "docker rmi -f \$(docker images -q directconverter_frontend) 2>/dev/null || true\r"
+expect "root@*"
+
+send "docker-compose build --no-cache frontend\r"
+expect "root@*" timeout
+
+send "docker-compose up -d frontend\r"
+expect "root@*"
+
+send "sleep 5\r"
+expect "root@*"
+
+send "docker-compose ps\r"
+expect "root@*"
+
+send "curl -I https://dc-tools.cc/ 2>&1 | head -3\r"
+expect "root@*"
+
+puts "\n=== 完成! ===\n"
+
+send "exit\r"
+expect eof
