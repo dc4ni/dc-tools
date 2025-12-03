@@ -153,11 +153,10 @@ function ImageCompressTool({ language = 'zh-TW' }) {
     <div className="compress-tool-container">
       <div className="compress-tool-content">
         <h1 className="compress-title">
-          <span className="compress-icon">🗜️</span>
           圖片壓縮工具
         </h1>
         <p className="compress-subtitle">
-          自動壓縮圖片，減小檔案大小，保持良好畫質
+          自動壓縮圖片，減小檔案大小,保持良好畫質
         </p>
 
         {!file ? (
@@ -167,7 +166,6 @@ function ImageCompressTool({ language = 'zh-TW' }) {
             onDragOver={handleDragOver}
             onClick={() => document.getElementById('compress-file-input').click()}
           >
-            <div className="upload-icon">📁</div>
             <p className="upload-text">點擊或拖放圖片到這裡</p>
             <p className="upload-hint">支援 JPEG, PNG, WebP, GIF, BMP</p>
             <input
@@ -196,7 +194,6 @@ function ImageCompressTool({ language = 'zh-TW' }) {
             {/* 錯誤訊息 */}
             {error && (
               <div className="compress-error">
-                <span className="error-icon">⚠️</span>
                 {error}
               </div>
             )}
@@ -250,12 +247,10 @@ function ImageCompressTool({ language = 'zh-TW' }) {
             <div className="compress-actions">
               {downloadUrl && (
                 <button className="btn-download" onClick={handleDownload}>
-                  <span className="btn-icon">⬇️</span>
                   下載壓縮圖片
                 </button>
               )}
               <button className="btn-reset" onClick={handleReset}>
-                <span className="btn-icon">🔄</span>
                 壓縮新圖片
               </button>
             </div>
