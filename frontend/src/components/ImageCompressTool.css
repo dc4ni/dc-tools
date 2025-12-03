@@ -1,6 +1,7 @@
 .compress-tool-container {
+  padding-top: var(--header-height);
   min-height: 100vh;
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  background: var(--bg-primary);
   padding: 40px 20px;
   display: flex;
   justify-content: center;
@@ -15,7 +16,7 @@
 
 .compress-title {
   font-size: 2.5rem;
-  color: #ffffff;
+  color: var(--text-primary);
   text-align: center;
   margin-bottom: 10px;
   display: flex;
@@ -30,14 +31,14 @@
 
 .compress-subtitle {
   text-align: center;
-  color: #a0aec0;
+  color: var(--text-secondary);
   font-size: 1.1rem;
   margin-bottom: 40px;
 }
 
 /* 上傳區域 */
 .compress-upload-area {
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--bg-secondary);
   border: 3px dashed rgba(33, 150, 243, 0.5);
   border-radius: 20px;
   padding: 80px 40px;
@@ -47,9 +48,10 @@
 }
 
 .compress-upload-area:hover {
-  background: rgba(255, 255, 255, 0.08);
+  background: var(--bg-secondary);
   border-color: rgba(33, 150, 243, 0.8);
   transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
 }
 
 .upload-icon {
@@ -59,20 +61,21 @@
 
 .upload-text {
   font-size: 1.5rem;
-  color: #ffffff;
+  color: var(--text-primary);
   margin-bottom: 10px;
 }
 
 .upload-hint {
-  color: #a0aec0;
+  color: var(--text-secondary);
   font-size: 1rem;
 }
 
 /* 處理區域 */
 .compress-processing-area {
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--bg-secondary);
   border-radius: 20px;
   padding: 40px;
+  border: 1px solid var(--border-color);
 }
 
 /* 進度條 */
@@ -83,7 +86,7 @@
 .compress-progress-bar {
   width: 100%;
   height: 30px;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--border-color);
   border-radius: 15px;
   overflow: hidden;
   position: relative;
@@ -102,7 +105,7 @@
 
 .compress-progress-text {
   text-align: center;
-  color: #ffffff;
+  color: var(--text-primary);
   margin-top: 10px;
   font-size: 1.1rem;
   font-weight: 600;
@@ -135,14 +138,14 @@
 }
 
 .compress-preview-box {
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--bg-secondary);
   border-radius: 15px;
   padding: 25px;
   border: 2px solid rgba(33, 150, 243, 0.3);
 }
 
 .preview-title {
-  color: #ffffff;
+  color: var(--text-primary);
   font-size: 1.3rem;
   margin-bottom: 20px;
   text-align: center;
@@ -152,13 +155,14 @@
 .preview-image-wrapper {
   width: 100%;
   height: 300px;
-  background: rgba(0, 0, 0, 0.3);
+  background: var(--bg-primary);
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   margin-bottom: 20px;
+  border: 1px solid var(--border-color);
 }
 
 .preview-image {
@@ -172,14 +176,14 @@
 }
 
 .info-label {
-  color: #a0aec0;
+  color: var(--text-secondary);
   font-size: 0.9rem;
   margin-bottom: 5px;
   margin-top: 10px;
 }
 
 .info-value {
-  color: #ffffff;
+  color: var(--text-primary);
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 10px;
@@ -212,7 +216,7 @@
 }
 
 .arrow-text {
-  color: #a0aec0;
+  color: var(--text-secondary);
   font-size: 0.9rem;
   text-align: center;
   line-height: 1.5;
@@ -256,14 +260,15 @@
 }
 
 .btn-reset {
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 2px solid var(--border-color);
 }
 
 .btn-reset:hover {
-  background: rgba(255, 255, 255, 0.15);
+  background: var(--bg-primary);
   transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
 }
 
 .btn-icon {
