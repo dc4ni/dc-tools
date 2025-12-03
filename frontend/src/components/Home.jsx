@@ -70,6 +70,7 @@ function Home({ language, onStart }) {
             <p>{text.imageResizeCropDesc}</p>
           </div>
           <div className="tool-card" onClick={() => handleToolClick('/img_compress')}>
+            <div className="tool-icon">🗜️</div>
             <h3>圖片壓縮</h3>
             <p>減小圖片檔案大小，節省儲存空間</p>
           </div>
@@ -93,6 +94,7 @@ function Home({ language, onStart }) {
                 <p>{text.imageResizeCropDesc}</p>
               </div>
               <div className="tool-selector-card" onClick={() => handleToolClick('/img_compress')}>
+                <div className="tool-selector-icon">🗜️</div>
                 <h3>圖片壓縮</h3>
                 <p>減小圖片檔案大小，節省儲存空間</p>
               </div>

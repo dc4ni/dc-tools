@@ -107,6 +107,7 @@ function Header({ onNavigate, language, onLanguageChange, theme, onThemeChange }
                     {text.imageToolsList.imageResizeCrop}
                   </button>
                   <button className="dropdown-item" onClick={() => handleToolClick('/img_compress')}>
+                    <span className="tool-icon"></span>
                     圖片壓縮
                   </button>
                 </div>
