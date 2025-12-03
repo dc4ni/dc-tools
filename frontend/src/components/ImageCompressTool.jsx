@@ -268,7 +268,7 @@ function ImageCompressTool({ language = 'zh-TW' }) {
         position: 'fixed',
         bottom: '20px',
         right: '20px',
-        backgroundColor: 'rgba(139, 92, 246, 0.9)',
+        backgroundColor: 'rgba(33, 150, 243, 0.95)',
         color: 'white',
         padding: '8px 16px',
         borderRadius: '20px',
