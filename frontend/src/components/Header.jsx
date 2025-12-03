@@ -106,10 +106,9 @@ function Header({ onNavigate, language, onLanguageChange, theme, onThemeChange }
                     <span className="tool-icon">📏</span>
                     {text.imageToolsList.imageResizeCrop}
                   </button>
-                  <button className="dropdown-item disabled">
-                    <span className="tool-icon">📦</span>
-                    {text.imageToolsList.imageCompress}
-                    <span className="coming-soon">{language === 'zh' ? '即將推出' : 'Soon'}</span>
+                  <button className="dropdown-item" onClick={() => handleToolClick('/img_compress')}>
+                    <span className="tool-icon">�️</span>
+                    圖片壓縮
                   </button>
                 </div>
 

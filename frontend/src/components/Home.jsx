@@ -69,6 +69,11 @@ function Home({ language, onStart }) {
             <h3>{text.imageResizeCrop}</h3>
             <p>{text.imageResizeCropDesc}</p>
           </div>
+          <div className="tool-card" onClick={() => handleToolClick('/img_compress')}>
+            <div className="tool-icon">🗜️</div>
+            <h3>圖片壓縮</h3>
+            <p>減小圖片檔案大小，節省儲存空間</p>
+          </div>
         </div>
       </section>
 
@@ -87,6 +92,11 @@ function Home({ language, onStart }) {
                 <div className="tool-selector-icon">📏</div>
                 <h3>{text.imageResizeCrop}</h3>
                 <p>{text.imageResizeCropDesc}</p>
+              </div>
+              <div className="tool-selector-card" onClick={() => handleToolClick('/img_compress')}>
+                <div className="tool-selector-icon">🗜️</div>
+                <h3>圖片壓縮</h3>
+                <p>減小圖片檔案大小，節省儲存空間</p>
               </div>
             </div>
             <button className="cancel-button" onClick={() => setShowToolSelector(false)}>

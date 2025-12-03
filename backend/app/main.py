@@ -364,6 +364,92 @@ async def clear_error_log():
         raise HTTPException(status_code=500, detail=str(e))
 
 
+@app.post("/api/compress", tags=["Compress"])
+async def compress_image(file: UploadFile = File(...)):
+    """Compress an image to reduce file size"""
+    try:
+        # Validate file type
+        if file.content_type not in ALLOWED_MIME_TYPES:
+            raise HTTPException(
+                status_code=400,
+                detail=f"Unsupported file type: {file.content_type}"
+            )
+        
+        # Read file content
+        content = await file.read()
+        
+        # Check file size
+        if len(content) > MAX_FILE_SIZE:
+            raise HTTPException(
+                status_code=400,
+                detail=f"File too large. Maximum size is {MAX_FILE_SIZE / (1024 * 1024)}MB"
+            )
+        
+        # Generate unique filename
+        file_id = str(uuid.uuid4())
+        file_extension = os.path.splitext(file.filename)[1].lower()
+        upload_filename = f"{file_id}{file_extension}"
+        upload_path = UPLOAD_DIR / upload_filename
+        
+        # Save uploaded file
+        with open(upload_path, "wb") as f:
+            f.write(content)
+        
+        # Determine output format based on file extension
+        format_map = {
+            '.jpg': 'JPEG',
+            '.jpeg': 'JPEG',
+            '.png': 'PNG',
+            '.webp': 'WEBP',
+            '.gif': 'GIF',
+            '.bmp': 'BMP'
+        }
+        output_format = format_map.get(file_extension, 'JPEG')
+        
+        # Set compression quality based on format
+        # For JPEG/WebP: use 75% quality (good compression with acceptable quality)
+        # For PNG: optimize and reduce colors if possible
+        # For GIF: optimize
+        # For BMP: convert to JPEG for compression
+        if output_format in ['JPEG', 'WEBP']:
+            quality = 75
+        elif output_format == 'PNG':
+            quality = 90  # PNG is lossless, but we can optimize
+        elif output_format == 'GIF':
+            quality = 85
+        elif output_format == 'BMP':
+            # Convert BMP to JPEG for better compression
+            output_format = 'JPEG'
+            quality = 75
+        else:
+            quality = 85
+        
+        # Compress image
+        temp_filename = f"{file_id}_compressed{file_extension if output_format != 'JPEG' or file_extension == '.jpg' or file_extension == '.jpeg' else '.jpg'}"
+        temp_path = TEMP_DIR / temp_filename
+        
+        converter = ImageConverter(str(upload_path))
+        converter.compress(str(temp_path), output_format, quality=quality)
+        
+        logger.info(f"Compressed {file.filename} -> {temp_filename} (format: {output_format}, quality: {quality})")
+        
+        # Return compressed file
+        return FileResponse(
+            temp_path,
+            media_type=f"image/{output_format.lower()}",
+            filename=f"compressed_{file.filename}"
+        )
+        
+    except Exception as e:
+        logger.error(f"Compression error: {e}")
+        ErrorLogManager.log_error(
+            error_type="CompressionError",
+            message=str(e),
+            filename=file.filename if file else "unknown"
+        )
+        raise HTTPException(status_code=500, detail=str(e))
+
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)

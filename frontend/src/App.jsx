@@ -5,6 +5,7 @@ import Header from './components/Header'
 import Home from './components/Home'
 import ImageConverterTool from './components/ImageConverterTool'
 import ImageResizeCropTool from './components/ImageResizeCropTool'
+import ImageCompressTool from './components/ImageCompressTool'
 import errorLogger, { setupGlobalErrorHandling } from './services/errorLogger'
 
 // Error Boundary Component
@@ -151,6 +152,16 @@ function App() {
                 path="/img_resize" 
                 element={
                   <ImageResizeCropTool 
+                    onShowMessage={showMessage}
+                    showMessage={showMessage}
+                    message={message}
+                  />
+                } 
+              />
+              <Route 
+                path="/img_compress" 
+                element={
+                  <ImageCompressTool 
                     onShowMessage={showMessage}
                     showMessage={showMessage}
                     message={message}

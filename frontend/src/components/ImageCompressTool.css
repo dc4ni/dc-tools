@@ -1,0 +1,347 @@
+.compress-tool-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.compress-tool-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.compress-title {
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.compress-icon {
+  font-size: 3rem;
+}
+
+.compress-subtitle {
+  text-align: center;
+  color: #a0aec0;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+/* 上傳區域 */
+.compress-upload-area {
+  background: rgba(255, 255, 255, 0.05);
+  border: 3px dashed rgba(139, 92, 246, 0.5);
+  border-radius: 20px;
+  padding: 80px 40px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.compress-upload-area:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(139, 92, 246, 0.8);
+  transform: translateY(-5px);
+}
+
+.upload-icon {
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
+.upload-text {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.upload-hint {
+  color: #a0aec0;
+  font-size: 1rem;
+}
+
+/* 處理區域 */
+.compress-processing-area {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 40px;
+}
+
+/* 進度條 */
+.compress-progress-container {
+  margin-bottom: 30px;
+}
+
+.compress-progress-bar {
+  width: 100%;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.compress-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #8b5cf6, #a78bfa);
+  transition: width 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  border-radius: 15px;
+}
+
+.compress-progress-text {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* 錯誤訊息 */
+.compress-error {
+  background: rgba(239, 68, 68, 0.1);
+  border: 2px solid rgba(239, 68, 68, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  color: #fca5a5;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.error-icon {
+  font-size: 1.5rem;
+}
+
+/* 預覽容器 */
+.compress-preview-container {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 30px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.compress-preview-box {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 25px;
+  border: 2px solid rgba(139, 92, 246, 0.3);
+}
+
+.preview-title {
+  color: #ffffff;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.preview-image-wrapper {
+  width: 100%;
+  height: 300px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.preview-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.preview-info {
+  text-align: center;
+}
+
+.info-label {
+  color: #a0aec0;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.info-value {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.size-original {
+  color: #fbbf24;
+}
+
+.size-compressed {
+  color: #34d399;
+}
+
+.size-saved {
+  color: #8b5cf6;
+}
+
+/* 壓縮箭頭 */
+.compress-arrow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.arrow-icon {
+  font-size: 3rem;
+  color: #8b5cf6;
+}
+
+.arrow-text {
+  color: #a0aec0;
+  font-size: 0.9rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.arrow-text strong {
+  color: #8b5cf6;
+  font-size: 1.3rem;
+}
+
+/* 操作按鈕 */
+.compress-actions {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-download,
+.btn-reset {
+  padding: 15px 40px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-download {
+  background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+  color: white;
+}
+
+.btn-download:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(139, 92, 246, 0.4);
+}
+
+.btn-reset {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-reset:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-3px);
+}
+
+.btn-icon {
+  font-size: 1.3rem;
+}
+
+/* 響應式設計 */
+@media (max-width: 1024px) {
+  .compress-preview-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .compress-arrow {
+    transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .compress-title {
+    font-size: 2rem;
+  }
+
+  .compress-icon {
+    font-size: 2.5rem;
+  }
+
+  .compress-upload-area {
+    padding: 60px 30px;
+  }
+
+  .upload-icon {
+    font-size: 4rem;
+  }
+
+  .upload-text {
+    font-size: 1.2rem;
+  }
+
+  .compress-processing-area {
+    padding: 25px;
+  }
+
+  .preview-image-wrapper {
+    height: 200px;
+  }
+
+  .compress-actions {
+    flex-direction: column;
+  }
+
+  .btn-download,
+  .btn-reset {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .compress-title {
+    font-size: 1.5rem;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .compress-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .compress-upload-area {
+    padding: 40px 20px;
+  }
+
+  .upload-text {
+    font-size: 1rem;
+  }
+
+  .upload-hint {
+    font-size: 0.85rem;
+  }
+}

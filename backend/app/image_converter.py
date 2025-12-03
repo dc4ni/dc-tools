@@ -158,3 +158,66 @@ class ImageConverter:
                 "webp": ["png", "jpg", "bmp", "gif"],
             }
         }
+    
+    def __init__(self, input_path: str):
+        """Initialize image converter with input path"""
+        self.input_path = Path(input_path)
+        if not self.input_path.exists():
+            raise FileNotFoundError(f"Input file not found: {input_path}")
+    
+    def compress(self, output_path: str, output_format: str = None, quality: int = 75):
+        """
+        Compress image to reduce file size
+        
+        Args:
+            output_path: Path to save compressed image
+            output_format: Output format (JPEG, PNG, WEBP, etc.). If None, use original format
+            quality: Compression quality (0-100)
+        """
+        try:
+            output_path = Path(output_path)
+            
+            with Image.open(self.input_path) as img:
+                # Determine output format
+                if output_format is None:
+                    output_format = img.format or 'JPEG'
+                
+                output_format = output_format.upper()
+                
+                # Convert RGBA to RGB for JPEG
+                if output_format == 'JPEG' and img.mode in ['RGBA', 'LA', 'P']:
+                    rgb_img = Image.new('RGB', img.size, (255, 255, 255))
+                    if img.mode == 'RGBA':
+                        rgb_img.paste(img, mask=img.split()[3])
+                    elif img.mode == 'LA':
+                        img_rgb = img.convert('RGBA')
+                        rgb_img.paste(img_rgb, mask=img_rgb.split()[3])
+                    elif img.mode == 'P':
+                        img_rgba = img.convert('RGBA')
+                        rgb_img.paste(img_rgba, mask=img_rgba.split()[3])
+                    img = rgb_img
+                
+                # Save with compression
+                save_kwargs = {'format': output_format}
+                
+                if output_format in ['JPEG', 'WEBP']:
+                    save_kwargs['quality'] = quality
+                    save_kwargs['optimize'] = True
+                elif output_format == 'PNG':
+                    # PNG compression
+                    save_kwargs['optimize'] = True
+                    save_kwargs['compress_level'] = 9
+                    # Reduce colors for better compression if image is large
+                    if img.mode == 'RGBA' or img.mode == 'RGB':
+                        img = img.convert('P', palette=Image.ADAPTIVE, colors=256)
+                elif output_format == 'GIF':
+                    # GIF compression
+                    save_kwargs['optimize'] = True
+                    if img.mode != 'P':
+                        img = img.convert('P', palette=Image.ADAPTIVE, colors=256)
+                
+                img.save(str(output_path), **save_kwargs)
+                
+        except Exception as e:
+            raise ValueError(f"Failed to compress image: {str(e)}")
+
