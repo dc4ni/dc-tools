@@ -15,6 +15,10 @@ function Home({ language, onStart }) {
       imageDesc: 'Convert between PNG, JPG, GIF, WEBP, and BMP formats',
       imageResizeCrop: 'Image Resize/Crop',
       imageResizeCropDesc: 'Resize or crop images with precision control',
+      imageCompress: 'Image Compress',
+      imageCompressDesc: 'Reduce image file size while maintaining quality',
+      pdfTool: 'PDF Tools',
+      pdfToolDesc: 'Merge, split, and compress PDF files',
       cancel: 'Cancel'
     },
     zh: {
@@ -27,6 +31,10 @@ function Home({ language, onStart }) {
       imageDesc: '支援 PNG、JPG、GIF、WEBP、BMP 格式轉換',
       imageResizeCrop: '調整/裁切圖片',
       imageResizeCropDesc: '精確調整圖片尺寸或裁切指定區域',
+      imageCompress: '圖片壓縮',
+      imageCompressDesc: '減小圖片檔案大小，節省儲存空間',
+      pdfTool: 'PDF 工具',
+      pdfToolDesc: '合併、分割、壓縮 PDF 檔案',
       cancel: '取消'
     }
   }
@@ -74,6 +82,11 @@ function Home({ language, onStart }) {
             <h3>圖片壓縮</h3>
             <p>減小圖片檔案大小，節省儲存空間</p>
           </div>
+          <div className="tool-card" onClick={() => handleToolClick('/pdf_tool')}>
+            <div className="tool-icon">📑</div>
+            <h3>{text.pdfTool}</h3>
+            <p>{text.pdfToolDesc}</p>
+          </div>
         </div>
       </section>
 
@@ -97,6 +110,11 @@ function Home({ language, onStart }) {
                 <div className="tool-selector-icon">🗜️</div>
                 <h3>圖片壓縮</h3>
                 <p>減小圖片檔案大小，節省儲存空間</p>
+              </div>
+              <div className="tool-selector-card" onClick={() => handleToolClick('/pdf_tool')}>
+                <div className="tool-selector-icon">📑</div>
+                <h3>{text.pdfTool}</h3>
+                <p>{text.pdfToolDesc}</p>
               </div>
             </div>
             <button className="cancel-button" onClick={() => setShowToolSelector(false)}>
