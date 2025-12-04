@@ -74,7 +74,7 @@ function Header({ onNavigate, language, onLanguageChange, theme, onThemeChange }
       <div className="header-container">
         {/* Logo */}
         <div className="header-logo" onClick={() => onNavigate && onNavigate('/')}>
-          <h1>DirectConverter</h1>
+          <h1><span className="logo-highlight">DC</span> tools</h1>
         </div>
 
         {/* Navigation */}

@@ -404,3 +404,9 @@
     font-size: 14px;
   }
 }
+
+/* Logo highlight */
+.logo-highlight {
+  color: var(--accent-color);
+  font-weight: 800;
+}
