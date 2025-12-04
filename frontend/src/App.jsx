@@ -7,6 +7,7 @@ import ImageConverterTool from './components/ImageConverterTool'
 import ImageResizeCropTool from './components/ImageResizeCropTool'
 import ImageCompressTool from './components/ImageCompressTool'
 import errorLogger, { setupGlobalErrorHandling } from './services/errorLogger'
+import PDFTool from './components/PDFTool'
 
 // Error Boundary Component
 class ErrorBoundary extends React.Component {
@@ -165,6 +166,17 @@ function App() {
                     onShowMessage={showMessage}
                     showMessage={showMessage}
                     message={message}
+                  />
+                } 
+              />
+              <Route 
+                path="/pdf_tool" 
+                element={
+                  <PDFTool 
+                    onShowMessage={showMessage}
+                    showMessage={showMessage}
+                    message={message}
+                    language={language}
                   />
                 } 
               />

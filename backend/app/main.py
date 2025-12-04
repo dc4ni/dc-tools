@@ -19,6 +19,7 @@ from app.config import (
 )
 from app.image_converter import ImageConverter
 from app.error_log_manager import ErrorLogManager
+from app.pdf_processor import pdf_processor
 
 # Configure logging
 logging.basicConfig(level=logging.DEBUG)
@@ -453,3 +454,66 @@ async def compress_image(file: UploadFile = File(...)):
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
+
+
+@app.post("/api/pdf/process", tags=["PDF"])
+async def process_pdf(
+    files: List[UploadFile] = File(...),
+    operation: str = Form(...),
+    compress: bool = Form(False),
+    ranges: str = Form(None)
+):
+    """Process PDF files - merge, split, or compress"""
+    try:
+        logger.info(f"PDF process: operation={operation}, compress={compress}, files={len(files)}")
+        
+        # Validate files are PDFs
+        pdf_contents = []
+        for file in files:
+            if not file.content_type == 'application/pdf':
+                raise HTTPException(status_code=400, detail=f"File {file.filename} is not a PDF")
+            content = await file.read()
+            pdf_contents.append(content)
+        
+        # Process based on operation
+        if operation == 'merge':
+            if len(pdf_contents) < 2:
+                raise HTTPException(status_code=400, detail="Merge requires at least 2 PDF files")
+            result_pdf = pdf_processor.merge_pdfs(pdf_contents, compress=compress)
+            output_filename = f"merged_{uuid.uuid4().hex[:8]}.pdf"
+            
+        elif operation == 'split':
+            if len(pdf_contents) != 1:
+                raise HTTPException(status_code=400, detail="Split requires exactly 1 PDF file")
+            result_pdfs = pdf_processor.split_pdf(pdf_contents[0], ranges=ranges, compress=compress)
+            if result_pdfs:
+                result_pdf = result_pdfs[0]
+                output_filename = f"split_{uuid.uuid4().hex[:8]}.pdf"
+            else:
+                raise HTTPException(status_code=400, detail="No pages to split")
+        else:
+            raise HTTPException(status_code=400, detail=f"Unknown operation: {operation}")
+        
+        # Save result to temp file
+        temp_path = TEMP_DIR / output_filename
+        with open(temp_path, 'wb') as f:
+            f.write(result_pdf)
+        
+        logger.info(f"PDF processed successfully: {output_filename}")
+        
+        return FileResponse(
+            temp_path,
+            media_type="application/pdf",
+            filename=output_filename
+        )
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"PDF processing error: {e}")
+        ErrorLogManager.log_error(
+            error_type="PDFProcessingError",
+            message=str(e),
+            filename=files[0].filename if files else "unknown"
+        )
+        raise HTTPException(status_code=500, detail=str(e))
