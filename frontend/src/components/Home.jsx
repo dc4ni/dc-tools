@@ -18,7 +18,7 @@ function Home({ language, onStart }) {
       cancel: 'Cancel'
     },
     zh: {
-      hero: '簡單檔案轉換工具',
+      hero: 'DirectConverter - 簡單檔案轉換工具',
       subtitle: '快速、安全的瀏覽器端檔案轉換',
       start: '開始使用',
       tools: '可用工具',
