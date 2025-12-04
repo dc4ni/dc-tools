@@ -1,17 +1,7 @@
 import React, { useState } from 'react'
 import './Header.css'
 
-function Header({ onNavigate, langua                  <h3 className="dropdown-title">{text.toolCategories.imageTools}</h3>
-                  <button className="dropdown-item" onClick={() => handleToolClick('/img_transfer')}>
-                    {text.imageToolsList.imageConverter}
-                  </button>
-                  <button className="dropdown-item" onClick={() => handleToolClick('/img_resize')}>
-                    {text.imageToolsList.imageResizeCrop}
-                  </button>
-                  <button className="dropdown-item" onClick={() => handleToolClick('/img_compress')}>
-                    圖片壓縮
-                  </button>
-                </div>Change, theme, onThemeChange }) {
+function Header({ onNavigate, language, onLanguageChange, theme, onThemeChange }) {
   const [showToolsDropdown, setShowToolsDropdown] = useState(false)
   const [showMobileMenu, setShowMobileMenu] = useState(false)
 
@@ -117,7 +107,7 @@ function Header({ onNavigate, langua                  <h3 className="dropdown-ti
                     {text.imageToolsList.imageResizeCrop}
                   </button>
                   <button className="dropdown-item" onClick={() => handleToolClick('/img_compress')}>
-                    <span className="tool-icon">�️</span>
+                    <span className="tool-icon">🔧</span>
                     圖片壓縮
                   </button>
                 </div>
