@@ -15,14 +15,24 @@
   --pdf-error: #f44336;
 }
 
+
 .pdf-tool-container {
+  width: 100%;
   min-height: 100vh;
-  padding: 2rem 1rem;
+  padding-top: 140px;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   background-color: var(--pdf-bg-light);
   color: var(--pdf-text-light);
 }
 
-[data-theme="dark"] .pdf-tool-container {
+
+
+
+}
+
+.dark-mode .pdf-tool-container {
   background-color: var(--pdf-bg-dark);
   color: var(--pdf-text-dark);
 }
@@ -51,7 +61,7 @@
   font-size: 1.1rem;
 }
 
-[data-theme="dark"] .pdf-subtitle {
+.dark-mode .pdf-subtitle {
   color: #999;
 }
 
@@ -66,7 +76,7 @@
   margin-bottom: 2rem;
 }
 
-[data-theme="dark"] .pdf-upload-area {
+.dark-mode .pdf-upload-area {
   border-color: var(--pdf-border-dark);
   background-color: var(--pdf-surface-dark);
 }
@@ -84,7 +94,7 @@
   color: var(--pdf-text-light);
 }
 
-[data-theme="dark"] .upload-text {
+.dark-mode .upload-text {
   color: var(--pdf-text-dark);
 }
 
@@ -93,7 +103,7 @@
   font-size: 0.9rem;
 }
 
-[data-theme="dark"] .upload-hint {
+.dark-mode .upload-hint {
   color: #999;
 }
 
@@ -104,7 +114,7 @@
   margin-bottom: 2rem;
 }
 
-[data-theme="dark"] .pdf-file-list {
+.dark-mode .pdf-file-list {
   background-color: var(--pdf-surface-dark);
 }
 
@@ -125,7 +135,7 @@
   border: 1px solid var(--pdf-border-light);
 }
 
-[data-theme="dark"] .pdf-file-item {
+.dark-mode .pdf-file-item {
   background-color: var(--pdf-bg-dark);
   border-color: var(--pdf-border-dark);
 }
@@ -143,7 +153,7 @@
   font-size: 0.9rem;
 }
 
-[data-theme="dark"] .file-size {
+.dark-mode .file-size {
   color: #999;
 }
 
@@ -162,7 +172,7 @@
   font-size: 1rem;
 }
 
-[data-theme="dark"] .file-actions button {
+.dark-mode .file-actions button {
   background-color: var(--pdf-surface-dark);
   color: var(--pdf-text-dark);
 }
@@ -193,7 +203,7 @@
   margin-bottom: 2rem;
 }
 
-[data-theme="dark"] .pdf-operations {
+.dark-mode .pdf-operations {
   background-color: var(--pdf-surface-dark);
 }
 
@@ -222,7 +232,7 @@
   position: relative;
 }
 
-[data-theme="dark"] .operation-btn {
+.dark-mode .operation-btn {
   border-color: var(--pdf-border-dark);
   background-color: var(--pdf-bg-dark);
   color: var(--pdf-text-dark);
@@ -272,7 +282,7 @@
   transition: border-color 0.2s ease;
 }
 
-[data-theme="dark"] .split-options input {
+.dark-mode .split-options input {
   border-color: var(--pdf-border-dark);
   background-color: var(--pdf-bg-dark);
   color: var(--pdf-text-dark);
@@ -331,7 +341,7 @@
   text-align: center;
 }
 
-[data-theme="dark"] .pdf-progress-container {
+.dark-mode .pdf-progress-container {
   background-color: var(--pdf-surface-dark);
 }
 
@@ -344,7 +354,7 @@
   margin-bottom: 1rem;
 }
 
-[data-theme="dark"] .pdf-progress-bar {
+.dark-mode .pdf-progress-bar {
   background-color: var(--pdf-border-dark);
 }
 
@@ -378,7 +388,7 @@
   text-align: center;
 }
 
-[data-theme="dark"] .pdf-result {
+.dark-mode .pdf-result {
   background-color: var(--pdf-surface-dark);
 }
 
@@ -421,7 +431,7 @@
   border: 2px solid var(--pdf-border-light);
 }
 
-[data-theme="dark"] .btn-reset {
+.dark-mode .btn-reset {
   background-color: var(--pdf-surface-dark);
   color: var(--pdf-text-dark);
   border-color: var(--pdf-border-dark);
@@ -432,20 +442,8 @@
   background-color: var(--pdf-border-light);
 }
 
-[data-theme="dark"] .btn-reset:hover {
+.dark-mode .btn-reset:hover {
   background-color: var(--pdf-border-dark);
-}
-
-.version-badge {
-  position: absolute;
-  top: -1rem;
-  right: 0;
-  background-color: var(--pdf-primary);
-  color: white;
-  padding: 0.25rem 0.75rem;
-  border-radius: 12px;
-  font-size: 0.75rem;
-  font-weight: 600;
 }
 
 @media (max-width: 768px) {
@@ -472,5 +470,345 @@
 
   .file-name {
     max-width: 150px;
+  }
+}
+
+/* 新增樣式 - 頁面預覽與拖曳 */
+.pdf-pages-section {
+  margin: 2rem 0;
+}
+
+.pdf-pages-section h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: var(--pdf-primary);
+}
+
+.pdf-pages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--pdf-surface-light);
+  border-radius: 12px;
+  min-height: 200px;
+  margin-bottom: 1.5rem;
+}
+
+.dark-mode .pdf-pages-grid {
+  background-color: var(--pdf-surface-dark);
+}
+
+.pdf-pages-grid.dragging-over {
+  background-color: rgba(233, 30, 99, 0.1);
+  border: 2px dashed var(--pdf-primary);
+}
+
+.pdf-page-item {
+  position: relative;
+  background: white;
+  border-radius: 8px;
+  padding: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: grab;
+  transition: all 0.3s ease;
+}
+
+.dark-mode .pdf-page-item {
+  background: #2d2d2d;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.pdf-page-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(233, 30, 99, 0.3);
+}
+
+.pdf-page-item.dragging {
+  opacity: 0.5;
+  cursor: grabbing;
+  transform: rotate(5deg);
+}
+
+.page-thumbnail {
+  width: 100%;
+  aspect-ratio: 1 / 1.414; /* A4 比例 */
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark-mode .page-thumbnail {
+  background-color: #1e1e1e;
+}
+
+.page-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.thumbnail-placeholder {
+  font-size: 3rem;
+  color: #ccc;
+}
+
+.page-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.85rem;
+}
+
+.page-number {
+  font-weight: 600;
+  color: var(--pdf-primary);
+}
+
+.page-filename {
+  color: #666;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.75rem;
+}
+
+.dark-mode .page-filename {
+  color: #999;
+}
+
+.page-delete-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--pdf-error);
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.pdf-page-item:hover .page-delete-btn {
+  opacity: 1;
+}
+
+.page-delete-btn:hover {
+  background-color: #d32f2f;
+  transform: scale(1.1);
+}
+
+/* 檔案控制區域 */
+.pdf-files-control {
+  background-color: var(--pdf-surface-light);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.dark-mode .pdf-files-control {
+  background-color: var(--pdf-surface-dark);
+}
+
+.file-control-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--pdf-border-light);
+}
+
+.dark-mode .file-control-item {
+  border-bottom-color: var(--pdf-border-dark);
+}
+
+.file-control-item:last-child {
+  border-bottom: none;
+}
+
+.file-name {
+  flex: 1;
+  font-weight: 600;
+  color: var(--pdf-text-light);
+}
+
+.dark-mode .file-name {
+  color: var(--pdf-text-dark);
+}
+
+.file-pages {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.dark-mode .file-pages {
+  color: #999;
+}
+
+.file-toggle-btn,
+.file-delete-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.file-toggle-btn {
+  background-color: var(--pdf-primary);
+  color: white;
+}
+
+.file-toggle-btn:hover {
+  background-color: var(--pdf-primary-dark);
+  transform: translateY(-2px);
+}
+
+.file-delete-btn {
+  background-color: transparent;
+  color: var(--pdf-error);
+  border: 1px solid var(--pdf-error);
+}
+
+.file-delete-btn:hover {
+  background-color: var(--pdf-error);
+  color: white;
+}
+
+.upload-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+/* 修改進度條樣式 */
+.pdf-progress {
+  margin: 2rem 0;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background-color: var(--pdf-border-light);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.dark-mode .progress-bar {
+  background-color: var(--pdf-border-dark);
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--pdf-primary), var(--pdf-primary-light));
+  transition: width 0.3s ease;
+  border-radius: 4px;
+}
+
+.progress-text {
+  text-align: center;
+  display: block;
+  color: var(--pdf-primary);
+  font-weight: 600;
+}
+
+
+/* 版本號樣式 */
+.version-badge {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background: linear-gradient(135deg, var(--pdf-primary), var(--pdf-primary-dark));
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(233, 30, 99, 0.3);
+  z-index: 1000;
+}
+/* 下載按鈕樣式 */
+.pdf-download {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background-color: var(--pdf-success);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+}
+
+.download-btn:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(76, 175, 80, 0.4);
+}
+
+/* 處理按鈕樣式 */
+.process-btn {
+  padding: 1rem 3rem;
+  background: linear-gradient(135deg, var(--pdf-primary), var(--pdf-primary-dark));
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(233, 30, 99, 0.3);
+}
+
+.process-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(233, 30, 99, 0.4);
+}
+
+.process-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+  .pdf-tool-container {
+    padding: 1rem 0.5rem;
+    padding-top: 70px;
+  }
+
+  .pdf-pages-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 0.75rem;
+    padding: 0.75rem;
+  }
+
+  .file-control-item {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .file-name {
+    flex-basis: 100%;
   }
 }
